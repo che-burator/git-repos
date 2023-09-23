@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>  
-        #canvas {
-            border: 1px solid rgb(0, 0, 0);
-        }
-    </style>
-
 </head>
 <body>
 
-    <div id="airpollution"></div>
+    <form>
+<!--- 
+        <fieldset>
+            <legend>Select a measure Unit:</legend>
+            <div>
+                <input type="radio" id="celsius"    name="unit-select" value="Celsius" checked />
+                <label for="celsius">Celsius</label>
+    
+                <input type="radio" id="fahrenheit" name="unit-select" value="Fahrenheit">            
+                <label for="fahrenheit">Fahrenheit</label>    
+            </div>   
+        </fieldset>
+--->
+        <div>
+            <input id="temperature-input"   placeholder="Enter temperature value"   name="temperature-input" />
+        </div>
+        <div>
+            <input id="unit-select"         placeholder="Enter temperature unit"    name="unit-select" />
+        </div>        
 
-    <canvas width="1200" height="600" id="canvas_one"></canvas>
-    <canvas width="1200" height="600" id="canvas_two"></canvas>
-    <canvas width="1200" height="600" id="canvas_tri"></canvas>
+    </form>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div id="result"></div>
 
+    <script src='main.js'></script>
 
-    <script src='script.js'></script>
 
 </body>
 </html>
